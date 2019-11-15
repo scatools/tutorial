@@ -1,0 +1,198 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Learn More Pages For CPT Tool},
+            pdfauthor={Jiangdong Liu},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\providecommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Learn More Pages For CPT Tool}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Jiangdong Liu}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-11-15}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{intended-use}{%
+\chapter{Intended Use}\label{intended-use}}
+
+The Gulf Conservation Prioritization Tool (CPT) is \textbf{not} intended to be prescriptive. Instead this tool was designed to provide data to \textbf{support} conservation planning efforts across the Gulf Coast Region. All users acknowledge that the CPT model is intended to \textbf{explore} ecological and socioeconomic co-benefits of proposed areas of land conservation, and should \textbf{not} be used in a decision making context.
+
+The flexibility of this tool enables a user to evaluate conservation alternatives using either a \textbf{multi-criteria decision analysis (MCDA)} framework, or user-defined values.
+
+This book is intended to provide additional support documents for the data measures used in the CPT tool.
+
+\hypertarget{intro}{%
+\chapter{Introduction}\label{intro}}
+
+I leave some examples here for Andrew and Madison to easily pick up some of the features you can do in here.
+
+You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{habitat}.
+
+You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{chuck2019} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+
+\hypertarget{habitat}{%
+\chapter{Data Measure for Habitat}\label{habitat}}
+
+\hypertarget{project-area}{%
+\section{Project Area}\label{project-area}}
+
+\hypertarget{connectivity-to-existing-protected-area}{%
+\section{Connectivity to Existing Protected Area}\label{connectivity-to-existing-protected-area}}
+
+\hypertarget{structural-connectivity-index}{%
+\section{Structural Connectivity Index}\label{structural-connectivity-index}}
+
+\hypertarget{threat-of-urbanization}{%
+\section{Threat of Urbanization}\label{threat-of-urbanization}}
+
+\hypertarget{land-cover---composition-of-natural-lands}{%
+\section{Land Cover - Composition of Natural Lands}\label{land-cover---composition-of-natural-lands}}
+
+\hypertarget{wq}{%
+\chapter{Data Measure for Water Quality \& Quantity}\label{wq}}
+
+\hypertarget{impaired-watershed-area-epa-303d-list}{%
+\section{Impaired Watershed Area -- EPA `303(d)' list}\label{impaired-watershed-area-epa-303d-list}}
+
+\hypertarget{stream-abundance}{%
+\section{Stream Abundance}\label{stream-abundance}}
+
+\hypertarget{lcmr}{%
+\chapter{Data Measure for Living Costal \& Marine Resources}\label{lcmr}}
+
+\hypertarget{biodiversity-index}{%
+\section{Biodiversity Index}\label{biodiversity-index}}
+
+\hypertarget{threatened-and-endangered-species---critical-habitat-area}{%
+\section{Threatened and Endangered Species - Critical Habitat Area}\label{threatened-and-endangered-species---critical-habitat-area}}
+
+\hypertarget{threatened-and-endangered-species---number-of-species}{%
+\section{Threatened and Endangered Species - Number of Species}\label{threatened-and-endangered-species---number-of-species}}
+
+\hypertarget{light-pollution-index}{%
+\section{Light Pollution Index}\label{light-pollution-index}}
+
+\hypertarget{cl}{%
+\chapter{Data Measure for Community Resilience}\label{cl}}
+
+\hypertarget{national-register-of-historic-places}{%
+\section{National Register of Historic Places}\label{national-register-of-historic-places}}
+
+\hypertarget{national-heritage-area}{%
+\section{National Heritage Area}\label{national-heritage-area}}
+
+\hypertarget{social-vulnerability-index}{%
+\section{Social Vulnerability Index}\label{social-vulnerability-index}}
+
+\hypertarget{community-threat-index}{%
+\section{Community Threat Index}\label{community-threat-index}}
+
+\hypertarget{eco}{%
+\chapter{Data Measure for Gulf Economy}\label{eco}}
+
+\hypertarget{working-lands}{%
+\section{Working Lands}\label{working-lands}}
+
+\hypertarget{commercial-fishery-index}{%
+\section{Commercial Fishery Index}\label{commercial-fishery-index}}
+
+\hypertarget{recreational-fishery-index}{%
+\section{Recreational Fishery Index}\label{recreational-fishery-index}}
+
+\hypertarget{access-recreation}{%
+\section{Access \& Recreation}\label{access-recreation}}
+
+\bibliography{book.bib,packages.bib}
+
+
+\end{document}
